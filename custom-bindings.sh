@@ -7,9 +7,14 @@
 ##############################################################################
 # Custom keybindings script for Pop!_shell, loosely based on i3 and Regolith #
 ##############################################################################
+# WARNING: This script will change your gnome keybindings. If you are not    #
+# using Pop!_shell, it will be useless.                                      #
+# To reverse the effects of this, you can rest keybindings in the settings   #
+# application.                                                               #
+##############################################################################
 
 
-# Let's name our vim keys
+# First Let's name our vim keys to make things more readable later
 left="h"
 down="j"
 up="k"
