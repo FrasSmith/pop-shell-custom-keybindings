@@ -62,23 +62,33 @@ dconf write ${KEYS_GNOME_SHELL}/switch-to-workspace-7 "['<Super>7']"
 dconf write ${KEYS_GNOME_SHELL}/switch-to-workspace-8 "['<Super>8']"
 dconf write ${KEYS_GNOME_SHELL}/switch-to-workspace-9 "['<Super>9']"
 dconf write ${KEYS_GNOME_SHELL}/switch-to-workspace-10 "['<Super>0']"
+dconf write ${KEYS_GNOME_WM}/switch-to-workspace-1 "['<Super>1']"
+dconf write ${KEYS_GNOME_WM}/switch-to-workspace-2 "['<Super>2']"
+dconf write ${KEYS_GNOME_WM}/switch-to-workspace-3 "['<Super>3']"
+dconf write ${KEYS_GNOME_WM}/switch-to-workspace-4 "['<Super>4']"
+dconf write ${KEYS_GNOME_WM}/switch-to-workspace-5 "['<Super>5']"
+dconf write ${KEYS_GNOME_WM}/switch-to-workspace-6 "['<Super>6']"
+dconf write ${KEYS_GNOME_WM}/switch-to-workspace-7 "['<Super>7']"
+dconf write ${KEYS_GNOME_WM}/switch-to-workspace-8 "['<Super>8']"
+dconf write ${KEYS_GNOME_WM}/switch-to-workspace-9 "['<Super>9']"
+dconf write ${KEYS_GNOME_WM}/switch-to-workspace-10 "['<Super>0']"
 
 # Switch between workspaces
 # Note these will only work with the horizontal workspaces extension
-dconf write ${KEYS_GNOME_WM}/switch-to-workspace-left "['<Shift><Super>Tab']"
-dconf write ${KEYS_GNOME_WM}/switch-to-workspace-right "['<Super>Tab']"
+# dconf write ${KEYS_GNOME_WM}/switch-to-workspace-left "['<Shift><Super>Tab']"
+# dconf write ${KEYS_GNOME_WM}/switch-to-workspace-right "['<Super>Tab']"
 # Move windows between workspaces
-dconf write ${KEYS_GNOME_WM}/move-to-workspace-left "['<Shift><Super>Left','<Shift><Super>${left}']"
-dconf write ${KEYS_GNOME_WM}/move-to-workspace-right "['<Shift><Super>Right','<Shift><Super>${right}']"
+# dconf write ${KEYS_GNOME_WM}/move-to-workspace-left "['<Shift><Super>Left','<Shift><Super>${left}']"
+#.dconf write ${KEYS_GNOME_WM}/move-to-workspace-right "['<Shift><Super>Right','<Shift><Super>${right}']"
 # Move between monitors
 dconf write ${KEYS_GNOME_WM}/move-to-monitor-left "['<Alt><Super>Left','<Alt><Super>${left}']"
 dconf write ${KEYS_GNOME_WM}/move-to-monitor-right "['<Alt><Super>Right','<Alt><Super>${right}']"
 
 # These are for default Ubuntu vertical workspaces
-# dconf write ${KEYS_GNOME_WM}/switch-to-workspace-down "['<Primary><Super>Down','<Primary><Super>${down}']"
-# dconf write ${KEYS_GNOME_WM}/switch-to-workspace-up "['<Primary><Super>Up','<Primary><Super>${up}']"
-# dconf write ${KEYS_GNOME_WM}/move-to-workspace-down "['<Shift><Super>Down','<Shift><Super>${down}']"
-# dconf write ${KEYS_GNOME_WM}/move-to-workspace-up "['<Shift><Super>Up','<Shift><Super>${up}']"
+ dconf write ${KEYS_GNOME_WM}/switch-to-workspace-down "['<Super>Tab']"
+ dconf write ${KEYS_GNOME_WM}/switch-to-workspace-up "['<Shift><Super>Tab']"
+ dconf write ${KEYS_GNOME_WM}/move-to-workspace-down "['<Shift><Super>Down','<Shift><Super>${down}']"
+ dconf write ${KEYS_GNOME_WM}/move-to-workspace-up "['<Shift><Super>Up','<Shift><Super>${up}']"
 
 ######################################
 #                                    #
@@ -117,6 +127,8 @@ dconf write ${KEYS_POP}/tile-swap-down "['<Primary>Down', '<Primary>${down}']"
 #  end of tile adjustment mode bindings #
 #########################################
 
+dconf write ${KEYS_POP}/show-title "false"
+
 # Various bindings and launchers
 # Lock screen
 dconf write ${KEYS_MEDIA}/screensaver "['<Super>Escape']"
@@ -130,3 +142,9 @@ dconf write ${KEYS_MEDIA}/terminal "['<Super>Return']"
 dconf write ${KEYS_MEDIA}/www "['<Shift><Super>Return']"
 # Close Window
 dconf write ${KEYS_GNOME_WM}/close "['<Super>q']"
+
+# Various default settings (without keybindings)
+# Hide titles
+dconf write ${KEYS_POP}/show-title "false"
+
+dconf write ${KEYS_POP}/search "['<Super>slash', '<Super>Space']"
