@@ -147,4 +147,4 @@ dconf write ${KEYS_GNOME_WM}/close "['<Super>q']"
 # Hide titles
 dconf write ${KEYS_POP}/show-title "false"
 
-dconf write ${KEYS_POP}/search "['<Super>slash', '<Super>Space']"
+dconf write ${KEYS_POP}/activate-launcher "['<Super>slash', '<Super>Space']"
